@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Exemplo de Componentes Bootstrap</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+  <!-- Modal -->
+  <div class="modal fade" id="modalGodzilla" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Informações Godzilla vs Kong</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="imagens/Godzilla vs Kong.jpg">
+          <p>Sinopse: As lendas se enfrentam em "Godzilla vs. Kong", quando esses adversários míticos se encontram em
+            uma espetacular batalha, na qual o destino do mundo entrará em jogo. Kong e seus protetores embarcam em uma
+            jornada perigosa para encontrar seu verdadeiro lar. Com eles está Jia, uma jovem órfã que tem uma ligação
+            única e forte com Kong. Mas eles não sabiam que estavam no caminho de um Godzilla enfurecido, que está
+            deixando um rastro de destruição pelo planeta. Esse combate épico entre os dois titãs, instigado por forças
+            ocultas, é apenas o começo do mistério que jaz no núcleo da Terra.</p>
+          <p>Diretor: Adam Wingard Lançamento: 2021</p>
+          <p>Roteiro: Max Borenstein, Eric Pearson;</p>
+          <p>Elenco: Alexander Skarsgård
+            Millie Bobby Brown
+            Rebecca Hall
+            Brian Tyree Henry
+            Shun Oguri
+            Eiza González
+            Jessica Henwick
+            Julian Dennison
+            Kyle Chandler
+            Demián Bichir</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-warnig">Assistir</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="modalToyStory" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Informações Toy Story 4</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="imagens/Toy Story 4.jpg">
+          <p>Sinopse: Woody, Buzz Lightyear e o resto da turma embarcam em uma viagem com Bonnie e um novo brinquedo
+            chamado Forky. A aventura logo se transforma em uma reunião inesperada quando o ligeiro desvio que Woody faz
+            o leva ao seu amigo há muito perdido, Bo Peep.</p>
+          <p>Diretor: Josh Cooley Lançamento: 2019</p>
+          <p>Roteiro: Stephany Folsom
+            Andrew Stanton</p>
+          <p>Elenco: Tom Hanks, Tim Allen, Keanu Reeves, Annie Potts</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-warnig">Assistir</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="modalSoul" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Informações Soul</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="imagens/Soul.png">
+          <p>Sinopse: Joe é um professor de música do ensino médio apaixonado por jazz, cuja vida não foi como ele
+            esperava. Quando ele viaja a uma outra realidade para ajudar outra pessoa a encontrar sua paixão, ele
+            descobre o verdadeiro sentido da vida.</p>
+          <p>Diretores: Pete Docter, Kemp Powers Lançamento: 2021</p>
+          <p>Roteiro: Pete Docter
+            Mike Jones
+            Kemp Powers</p>
+          <p>Elenco: Rachel House, Tina Fey, Jamie Foxx, Daveed Diggs</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-warnig">Assistir</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="container header">
+    <div class="row">
+      <div class="col-12 header_area">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+            <img src="imagens/images.jpg" class="logo">
+          </div>
+          <div class="col-12 col-sm-12 col-md-8 col-lg-10 menu_area">
+            <nav class="nav nav-pills flex-column flex-sm-row">
+              <a class="flex-sm-fill text-sm-center nav-link active" href="#">Lançamentos</a>
+              <a class="flex-sm-fill text-sm-center nav-link" href="#">Em destaque</a>
+              <a class="flex-sm-fill text-sm-center nav-link" href="#">Avaliações</a>
+              <a class="flex-sm-fill text-sm-center nav-link" href="#">Entrevistas e Making of</a>
+              <a class="flex-sm-fill text-sm-center nav-link" href="#">Novidade</a>
+              <div class="caixa-pesquisa">
+                <input type="text" class="texto_pesquisa">
+                <button class="botao_ok">Search</button>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="container main">
+    <section class="lançamentos">
+      <h1>Lançamentos</h1>
+      <div class="col-12 col-sm-12 col-md-12">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <iframe width="1150" height="560" src="https://www.youtube.com/embed/ZQA-Bg9MydE"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="carousel-item">
+              <iframe width="1150" height="560" src="https://www.youtube.com/embed/76CslX-q5C4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="carousel-item">
+              <iframe width="1150" height="560" src="https://www.youtube.com/embed/hWBxoH4-4yw"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div class="col-12 col-sm-12 col-md-2 menu_area">
+          <nav class="nav nav-pills flex-column flex-sm-row">
+            <a class="flex-sm-fill text-sm-center nav-link" href="#" data-toggle="modal"
+              data-target="#modalGodzilla">Infos-Godzilla vs Kong</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="#" data-toggle="modal"
+              data-target="#modalToyStory">Infos-Toy Story 4</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="#" data-toggle="modal" data-target="#modalSoul">Infos-
+              Soul</a>
+          </nav>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="row em_destaque">
+      <div class="destaque-header">
+        <h1>Em destaque</h1>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Categoria: TODOS
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Aventura</a>
+            <a class="dropdown-item" href="#">Romance</a>
+            <a class="dropdown-item" href="#">Comédia</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+          <div class="card">
+            <img src="imagens/Coringa 2.jpg" class="card-img-top" alt="Coringa">
+            <div class="card-body">
+              <h5 class="card-title">Coringa</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+          <div class="card">
+            <img src="imagens/Vingadores-Ultimato.jpg" class="card-img-top" alt="Vingadores-Ultimato">
+            <div class="card-body">
+              <h5 class="card-title">Vingadores-Ultimato</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+          <div class="card">
+            <img src="imagens/Rei Leão.jpg" class="card-img-top" alt="Rei Leão">
+            <div class="card-body">
+              <h5 class="card-title">Rei Leão</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+          <div class="card">
+            <img src="imagens/Fuja.jpg" class="card-img-top" alt="Fuja">
+            <div class="card-body">
+              <h5 class="card-title">Fuja</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="botao-container">
+        <button type="button" class="btn btn-dark">+ Carregar mais filmes</button>
+      </div>
+    </section>
+    <section class="row ultimas_avaliações">
+      <h1>Últimas Avaliações</h1>
+      <div class="card-group">
+        <div class="card">
+          <img class="card-img-top" src="imagens/Jovem 1.jpg" alt="Jovem 1">
+          <div class="card-body">
+            <h5 class="card-title">Alice Almeida, 24.</h5>
+            <p class="card-text">Excelente filme, achei maravilhoso todas as cenas. Recomendo fortemente!!</p>
+            <p class="card-text"><small class="text-muted">Última atualização: 15/03/2021</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="imagens/Velho 1.jpg" alt="Velho 1">
+          <div class="card-body">
+            <h5 class="card-title">Fábio Ricardo, 58.</h5>
+            <p class="card-text">O filme poderia ter sido melhor, achei várias falhas no roteiro.</p>
+            <p class="card-text"><small class="text-muted">Última atualização: 20/04/2021</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="imagens/Criança 1.jpg" alt="Criança 1">
+          <div class="card-body">
+            <h5 class="card-title">Luna, 12.</h5>
+            <p class="card-text">Adorei o filme, os personagens eram muito engraçados.</p>
+            <p class="card-text"><small class="text-muted">Última atualização: 21/04/2021</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="botao-container">
+        <button type="button" class="btn btn-dark">+ Carregar mais Avaliações</button>
+      </div>
+    </section>
+    <section class="row entrevistas_&_makingof">
+      <h1>Entrevistas & Making of</h1>
+      <div class="card-deck">
+        <div class="card">
+          <iframe width="359" height="180" src="https://www.youtube.com/embed/0HEvyxNJRks" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+          <div class="card-body">
+            <h5 class="card-title">Filme: Aquamen</h5>
+            <p class="card-text">Diretor: James Wan</p>
+            <p2 class="card-text">Roteiristas: David Leslie Johnson e Will Beall - Estreia: 2018</p2>
+          </div>
+        </div>
+        <div class="card">
+          <iframe width="359" height="180" src="https://www.youtube.com/embed/PsHR31poNLs" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+          <div class="card-body">
+            <h5 class="card-title">Filme: Jumanji 2</h5>
+            <p class="card-text">Diretor: Jake Kasdan</p>
+            <p2 class="card-text">Roteiristas: Jeff Pinkner e Scott Rosenberg - Estreia: 2019</p2>
+          </div>
+        </div>
+        <div class="card">
+          <iframe width="359" height="180" src="https://www.youtube.com/embed/V4nxGVgDPEw" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+          <div class="card-body">
+            <h5 class="card-title">Filme: Velozes & Furiosos: Hobbs & Shaw</h5>
+            <p class="card-text">Diretor: David Leitch</p>
+            <p2 class="card-text">Roteirista: Chris Morgan - Estreia: 2019</p2>
+          </div>
+        </div>
+      </div>
+      <div class="botao-container">
+        <button type="button" class="btn btn-dark">+ Carregar mais filmes</button>
+      </div>
+    </section>
+    <section class="Novidades">
+      <div class="container">
+        <div class="row">
+          <div class="col-6" id="col-novidades">
+            <h1>Novidades:</h1>
+            <h2>Peaky Blinders: série presta homenagem à atriz Helen McCroy</h2>
+            <img src="imagens/Novidade 1.jpg" class="imagem_novidade" alt="Novidade 1">
+            <p>Os fãs do seriado Peaky Blinders foram surpreendidos na sexta-feira (16) pelo anúncio de falecimento da
+              atriz Helen McCroy, intérprete da famosa Tia Polly. A equipe da série se manifestou por meio do perfil
+              oficial (@peakyblindersofficial) com uma arte diferenciada para homenagear a artista.</p>
+            <button type="button" class="btn btn-outline-dark">Hollywood</button>
+            <button type="button" class="btn btn-outline-dark">Oscar</button>
+            <button type="button" class="btn btn-outline-dark">melhor filme</button>
+          </div>
+          <div class="col-6" id="col-sobre">
+            <h2>Sobre:</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt unde perferendis inventore reprehenderit
+              nihil dolorem excepturi sapiente, commodi asperiores temporibus odio soluta, eius magni dolore ab optio
+              expedita? Ratione laudantium qui enim ea porro illo possimus, neque temporibus nesciunt hic ab ducimus
+              tempora earum aut nisi rerum autem dolores perspiciatis fugit accusamus laborum quasi sit praesentium
+              sapiente. Officiis eveniet saepe, facere adipisci, sit ex magnam aliquid optio id laudantium ratione animi
+              inventore? Natus consequuntur saepe quidem neque impedit tempora. Cupiditate beatae consequuntur sapiente
+              excepturi iste laborum reiciendis, debitis voluptate, maxime incidunt accusantium nam quis eius. Ratione
+              quos eum consectetur ipsam!</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+          <h2>The Walking Dead na Netflix: Atores da Marvel na série de TV</h2>
+          <img src="imagens/Novidade 2.jpg" class="imagem_novidade" alt="Novidade 2">
+          <p>Durante 11 anos, TWD foi um marco na cultura pop e elevou talentos ao estrelato. Tanto que muitos dos seus
+            atores foram escalados para produções maiores, como o Universo Cinematográfico Marvel. Antes, durante e
+            depois de seu tempo no universo de The Walking Dead, muitos atores apareceram nos filmes e séries do MCU,
+            alguns em pequenas aparições, outros em papéis principais.</p>
+          <button type="button" class="btn btn-outline-dark">Hollywood</button>
+          <button type="button" class="btn btn-outline-dark">Oscar</button>
+          <button type="button" class="btn btn-outline-dark">melhor filme</button>
+
+
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+          <h2>Depois de Velozes & Furiosos 9, Vin Diesel já se prepara para lançar mais uma franquia de filmes baseada
+            em jogo</h2>
+          <img src="imagens/Novidade 3.jpg" class="imagem_novidade" alt="Novidade 3">
+          <p>O ator de 53 anos já tem escolhido seu próximo projeto com potencial de virar franquia: Vin Diesel será o
+            protagonista da adaptação live-action do lendário jogo de mesa Rock'em Sock'em Robots.</p>
+          <button type="button" class="btn btn-outline-dark">Hollywood</button>
+          <button type="button" class="btn btn-outline-dark">Oscar</button>
+          <button type="button" class="btn btn-outline-dark">melhor filme</button>
+        </div>
+        <div class="col-lg-6">
+          <h2>Editorial:</h2>
+          <h3>Redação: Nome do Redator</h3>
+          <h3>Pesquisa: Nome do Pesquisador</h3>
+          <h3>Gerente Geral: Nome do Editor Chefe</h3>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <h2>Redes Sociais:</h2>
+          <img src="imagens/Instagram Icon.png" class="imagem_rede" alt="Rede Social">
+          <img src="imagens/Twitter icon.png" class="imagem_rede" alt="Rede Social">
+          <img src="imagens/Facebook icon.png" class="imagem_face" alt="Rede Social">
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer class="container footer">
+    <div class="row">
+
+      <div class="col-12 footer_area">
+        HenriqueFlix- Todos os direitos reservados - 2021
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
